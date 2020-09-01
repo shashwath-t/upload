@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+body {
+    background: #212121;
+}
+.clock {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ff4747;
+    font-size: 120px;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+}
+
+.iconbar {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+.fas {
+  color: #ff4747;
+  left: 20%;
+  height: 150px;
+  width: 150px;
+}
+

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+body {
+    background: #2A2A2A;
+}
+.clock {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #f25555;
+    font-size: 120px;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 7px;
+}
+
+.iconbar {
+  position: absolute;
+  top: 40%;
+  left: 29%;
+}
+
+.fas {
+  color: #f25555;
+}
+
+.fas:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.login-signup {
+  text-align: center;
+  height: 100%;
+  font-family: 'Comfortaa', cursive;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#signup {
+  background-color: #f25555;
+  left: 25%;
+  color: #2A2A2A;
+}
+
+
+
+#login {
+  background-color: #2A2A2A;
+  left: 75%;
+  color: #f25555;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 5vw;
+  height: 5vw;
+}
+
+.signupForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inp {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: 'Comfortaa', cursive;
+}
+
+#signupSubmit {
+  outline: none;
+  border: none;
+  color: #f25555;
+  background-color: #2A2A2A;
+  margin-top: 10%;
+  width: 100;
+  font-size: 30px;
+  font-family: 'Comfortaa', cursive;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+#signupSubmit:hover {
+  color: white;
+}
+
+#loginSubmit {
+  outline: none;
+  border: none;
+  color: #2A2A2A;
+  background-color: #f25555;
+  margin-top: 10%;
+  width: 100;
+  font-size: 30px;
+  font-family: 'Comfortaa', cursive;
+  padding: 5px 10px;
+  border-radius: 15px; 
+}
+
+#loginSubmit:hover {
+  color: white;
+}
+
+.fieldName {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 60px;
+}

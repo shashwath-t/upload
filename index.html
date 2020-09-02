@@ -6,17 +6,50 @@
   <title>Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/08971baa70.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div id="DigitalCLOCK" class="clock" onload="showTime()"></div>
-<script  src="script.js"></script>
+
 
 <div class='iconbar'>
-  <i class="fas fa-video fa-5x" id='icon-video'></i>
-  <i class="fas fa-comments fa-5x" id='icon-comments'></i>
+  <button class='btn'><i class="fas fa-video fa-5x" id='icon-video'></i></button>
+  <button class='btn'><i class="fas fa-comments fa-5x" id='icon-comments'></i></button>
+  <button class='btn'><i class="fas fa-calendar-alt fa-5x"></i></button>
+  <button class='btn'><i class="fas fa-cog fa-5x"></i></button>
+  <button class='btn'><i class="fas fa-users fa-5x"></i></button>
+  <button class='btn'><i class="fas fa-chalkboard-teacher fa-5x"></i></button>
+  <button class='btn' id='loginBtn'onclick="window.location.href='login.html'"><i class="fas fa-sign-in-alt fa-5x"></i></button>
+  <button class='btn' id='logoutBtn'><i class="fas fa-sign-out-alt fa-5x"></i></button>
+  <button class='btn'><i class="fas fa-envelope-open-text fa-5x"></i></button>
 </div>
 
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAL2QX5Q8HpajYacDxSuhKz3LU8vUfFxV0",
+      authDomain: "idekvideochat.firebaseapp.com",
+      databaseURL: "https://idekvideochat.firebaseio.com",
+      projectId: "idekvideochat",
+      storageBucket: "idekvideochat.appspot.com",
+      messagingSenderId: "958048694663",
+      appId: "1:958048694663:web:ab7a85e4091fd335d1e322",
+      measurementId: "G-NDVHTKEXTE"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    db.settings({ timestampsInSnapshots: true });
+  </script>
+  <script  src="js/script.js"></script>
 </body>
 </html>

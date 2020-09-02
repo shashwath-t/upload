@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/08971baa70.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class='login-signup' id='signup'>
+		<form id='signupForm'action="login_submit" method="get" accept-charset="utf-8">
+			<div class='signupForm'>
+				<h1>SIGN UP</h1><br>
+				<h3 class='fieldName'>Email:</h3>
+				<input type="text" name='email' id='signup-email' class='inp'>
+				<h3 class='fieldName'>Password:</h3>
+				<input type="password" name='pwd' id='signup-pwd' class='inp'>
+				<h3 class='fieldName'>Confirm Password:</h3>
+				<input type="password" name='conf_pwd' id='conf=pwd' class='inp'><br>
+				<input type="submit" value='submit' id='signupSubmit'/>
+			</div>
+		</form>
+	</div>
+
+	<div class='login-signup' id='login'>
+		<form id='loginForm'action="login_submit" method="get" accept-charset="utf-8">
+			<div class='signupForm'>
+				<h1>LOGIN</h1><br>
+				<h3 class='fieldName'>Username/Email:</h3>
+				<input type="text" name='email' id='login-email' class='inp'>
+				<h3 class='fieldName'>Password:</h3>
+				<input type="password" name='pwd' id='login-pwd' class='inp'>
+				<input type="submit" value='submit' id='loginSubmit'/>
+			</div>
+		</form>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyAL2QX5Q8HpajYacDxSuhKz3LU8vUfFxV0",
+	    authDomain: "idekvideochat.firebaseapp.com",
+	    databaseURL: "https://idekvideochat.firebaseio.com",
+	    projectId: "idekvideochat",
+	    storageBucket: "idekvideochat.appspot.com",
+	    messagingSenderId: "958048694663",
+	    appId: "1:958048694663:web:ab7a85e4091fd335d1e322",
+	    measurementId: "G-NDVHTKEXTE"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+
+	  const auth = firebase.auth();
+	  const db = firebase.firestore();
+
+	  db.settings({ timestampsInSnapshots: true });
+	</script>
+	<script src='js/auth.js'></script>
+</body>
+</html>
